@@ -510,17 +510,59 @@
   
   }
   
-  @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-  }
+  
   
   /******************************* DESKTOP *****************************************/
   
   @media only screen and (min-width: 1200px) {
   
+    .content-wrapper {
+      max-width: 960px;
+    }
+  
+    /* HERO */
+    .hero-area h1 {
+      width: 60%;
+    }
+  
+    /* FORM */
+    aside .content-wrapper {
+      justify-content: space-around;
+    }
+  
+    aside .content-wrapper .form-description, 
+    aside .content-wrapper .form {
+      width: 30%;
+    }
+  
+    /* FEATURES */
+    .features h1 {
+      width: 90%;
+    }
+  
+    .features article {
+      flex-basis: 33%;
+    }
+  
+    /* REVIEWS */
+  
+    .reviews article div {
+      width: 42%;
+    }
+  
+  
+  /********************************** ABOUT ************************************/
+  
+    .mission h1, 
+    .contact-section .content-wrapper h1 {
+      width: 95%;
+    }
+  
+  /********************************* FAQ ***************************************/
+  
+    .faq h1 {
+      width: 100%;
+    }
   }
   
   /* ==========================================================================
