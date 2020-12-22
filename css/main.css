@@ -88,12 +88,14 @@
      ========================================================================== */
   
     /****************************** HOMEPAGE ************************************/
-  
+    /* GENERAL STYLES */
     html {
-  
+      font-size: 16px;
     }
   
     body {
+      font-size: 1em;
+      font-family: 'Open Sans', sans-serif;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -106,6 +108,52 @@
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+    }
+  
+    ul {
+      list-style-type: none;
+    }
+  
+    a {
+      font-size: 1.125em;
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.25em;
+    }
+  
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.875em;
+    }
+  
+    h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.125em;
+    }
+  
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.875em;
+    }
+  
+    img {
+  
+    }
+  
+    figure {
+  
+    }
+  
+    address {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.875em;
+      font-style: normal;
     }
   
     /*************** HEADER STYLES *****************************************/
@@ -166,6 +214,29 @@
       align-items: center;
       flex-flow: row wrap;
     }
+  
+    /*
+    input[type=text] {
+      box-sizing: border-box;
+      width: 100%;
+      color: ;
+      font-style: italic;
+      padding: .875em;
+    }
+  
+    input[type=button] {
+      width: 100%;
+      padding: 20px 0;
+      margin-top: 20px;
+      background-color: #2a423a;
+      font-weight: 500;
+      font-size: 1.125em;
+      color: #e2e3ed;
+      border: none;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    */
   
     .form-description, .form-info {
       /*padding-left: 25px;*/
@@ -265,6 +336,14 @@
     .social-media ul {
       margin: 0;
       padding: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+  
+    .social-media ul li {
     }
   
     /************************ ABOUT ******************************/
