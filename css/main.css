@@ -436,6 +436,27 @@
       width: 100%;
     }
   
+  
+    /*MAP INFORMATION*/
+  
+    .map figure {
+      width: 100%;
+      height: 0;
+      padding-bottom: 125%;
+      overflow: hidden;
+      position: relative;
+    }
+  
+    .map iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  
+    /*Next, make code responsive for tablets and desktop. check mobile percentage*/
+  
     /* CONTACT US */
   
     .contact-us {
