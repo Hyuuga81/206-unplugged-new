@@ -96,10 +96,14 @@
     body {
       font-size: 1em;
       font-family: 'Open Sans', sans-serif;
+      color: #e2e3ed;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-flow: row wrap;
+      background-color: #282828;
+      background-size: cover;
     }
   
     .container {
@@ -117,10 +121,13 @@
     a {
       font-size: 1.125em;
       font-family: 'Open Sans', sans-serif;
+      color: #e2e3ed;
       text-transform: uppercase;
       text-decoration: none;
       font-weight: bold;
     }
+  
+  
   
     h1 {
       font-family: 'Poppins', sans-serif;
@@ -167,8 +174,22 @@
       flex-flow: row wrap;
     }
     
+    /*
+    .top-nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+    }*/
   
-    .logo, nav {
+    .header-divider {
+      width: 100%;
+      margin-top: 10px;
+      border-bottom: 1px solid #e2e3ed;
+    }
+  
+    .logo {
       padding-top: 20px;
       width: 100%;
       display: flex;
@@ -177,16 +198,19 @@
     }
   
     nav {
-      /*padding-left: 100px;*/
+      padding-top: 20px;
       width: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   
     nav ul {
       margin: 0;
       padding: 0;
-      width: 55%;
+      width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
     }
   
@@ -213,9 +237,11 @@
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #527158;
+      background-size: cover;
     }
   
-    /*
+    
     input[type=text] {
       box-sizing: border-box;
       width: 100%;
@@ -236,7 +262,7 @@
       text-align: center;
       text-transform: uppercase;
     }
-    */
+    
   
     .form-description, .form-info {
       /*padding-left: 25px;*/
@@ -270,6 +296,8 @@
       justify-content: center;
       align-items: flex-start;
       flex-flow: row wrap;
+      background: url(../img/rawpixel-800820-unsplash1.jpg) center no-repeat;
+      
     }
   
     .itinerary-title {
@@ -300,9 +328,15 @@
       width: 100%;
       padding: 55px 0 50px 0;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #2a423a;
+      background-size: cover;
+    }
+  
+    .testimony .container {
+      width: 90%;
     }
   
     .testimony-title, .testimony-img, .testimony-contents {
@@ -324,7 +358,11 @@
   
     /* FOOTER */
   
-    .contact-info, .copy{
+    footer {
+      padding-top: 50px;
+    }
+  
+    .copy{
       padding-top: 50px;
     }
   
@@ -338,7 +376,7 @@
       padding: 0;
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
       flex-flow: row wrap;
     }
@@ -347,6 +385,16 @@
     }
   
     /************************ ABOUT ******************************/
+  
+    .mission {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      padding: 50px 0;
+      background-color: #527158;
+    }
   
     .mission-title {
       width: 100%;
@@ -373,15 +421,24 @@
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #2a423a;
+      padding-bottom: 50px;
     }
   
+    .contact-us .container {
+      width: 90%;
+    }
+  
+    /*
     .contact-us h2 {
       width: 100%;
     }
+    */
   
     .general-info, .chat {
       width: 100%;
     }
+    
   
     /************************ FAQ ******************************/
   
@@ -391,9 +448,19 @@
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
+      background-color: #527158;
+      padding: 50px 0;
     }
   
-    .faq-item, .questions h2 {
+    .questions .container {
+      width: 90%;
+    }
+  
+  
+    .faq-questions-title {
+      width: 100%;
+    }
+    .faq-item {
       width: 100%;
     }
   
@@ -402,34 +469,45 @@
     @media (min-width: 768px) {
       /* HEADER STYLES */
       header {
-        width: 100%;
+        width: 90%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-flow: row wrap;
       }
   
+      header .container {
+        width: 100%;                /*this puts nav at right side all the way. dunno why*/
+        justify-content: space-between;   /*space between logo and nav*/
+      }
+  
       .logo {
         /*padding-left: 25px;*/
-        width: 48%;
+        width: 50%;
         justify-content: flex-start;
       }
   
+      .header-divider {
+        display: none;
+      }
+  
       .nav {
-        width: 48%;
-        width: 100%;
+        width: 50%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
       }
   
       nav ul {
         margin: 0;
         padding: 0;
-        width: 35%;
+        width: 90%;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: flex-end;
+      }
+  
+      nav ul li {
+        padding-left: 40px;
       }
   
       .hero-area h1 {
@@ -437,17 +515,22 @@
       }
       /* FORM STYLES */
       .form {
-        align-items: stretch;
+        /*align-items: flex-start;*/
       }
-    
-      .form-description, .form-info {
-        width: 48%;
+      
+      .form .container {
+  
         align-items: flex-start;
       }
+      .form-description, .form-info {
+        width: 50%;
+      }
     
-      .form-description h3, .form-description p {
+      /*
+      .form-description h3, .form-description input[type=text], .form-description input[type=button] {
         width: 70%;
       }
+      */
     
       .form-info h3 {
         width: 100%;
@@ -463,11 +546,21 @@
         width: 35%;
       }
   
+      .items p {
+        width: 70%;         /*This controls the width of the paragraph and icons in this div*/
+      }
+  
       /* TESTIMONIALS STYLES */
   
       .testimony {
-        justify-content: space-between;
+        width: 100%;
+        justify-content: center;    /*text sticks to left side without this*/
       }
+  
+      .testimony .container { 
+        width: 90%;                 /*don't understand but it wont work without this*/
+      }
+  
   
       .testimony-img, .testimony-contents {
         width: 48%;
@@ -476,47 +569,76 @@
       /* FOOTER STYLES */
   
       footer {
-        align-items: stretch;
-        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
       }
+  
+      footer .container {
+        width: 90%;
+        justify-content: space-around;
+        text-align: flex-start;
+      }
+  
       .contact-info, .social-media {
-        width: 48%;
+        width: 50%;
         text-align: center;
       }
   
-      .contact-info, .social-media, .copy{
-        padding-top: 50px;
+      .contact-info, .social-media, .copy {
+        /*padding-top: 50px;*/
       }
   
       /************************ ABOUT ******************************/
   
       /* MISSION */
+      .mission {
+  
+      }
+  
       .mission-contents {
         justify-content: space-between;
       }
   
       .mission-contents p {
-        width: 48%;
+        width: 45%;             /*This sets the width of the paragraphs in the mission div*/
       }
   
       /* CONTACT US */
   
       .contact-us {
-        justify-content: space-between;
+        justify-content: center;      
+      }
+  
+      .contact-us-title {
+        width: 100%;
+      }
+  
+      .contact-us .container {
+        width: 90%;
       }
     
       .general-info, .chat {
-        width: 48%;
+        width: 50%;
       }
   
       /************************ FAQ ******************************/
   
       .questions {
-        justify-content: space-between;
+        justify-content: center;
+        
+      }
+  
+      .questions .container {
+        align-items: flex-start;
       }
   
       .faq-item {
-        width: 48%;
+        width: 50%;
+      }
+  
+      .faq-item p, .faq-item h3 {
+        width: 80%;
       }
   
     }
@@ -528,11 +650,15 @@
       /* HEADER STYLES */
   
       header {
-        width: 100%;
+        width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-flow: row wrap;
+      }
+  
+      .header-divider {
+        display: none;
       }
   
       .nav {
@@ -543,15 +669,32 @@
         align-items: center;
       }
   
+      nav ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+  
+      nav ul li {
+        padding-left: 40px;
+      }
+  
       /* FORM STYLES */
   
       .form {
-        justify-content: space-around;
+        width: 100%;
+        justify-content: center;
+      }
+  
+      .form .container {
+        width: 90%;
       }
   
       .form-description, .form-info {
-        width: 25%;
-        align-items: flex-start;
+        width: 50%;
+        justify-content: space-between;
       }
   
       /* ITINERARY */
@@ -571,10 +714,13 @@
       }
   
       /* FOOTER */
-      
+  
       footer {
+        width: 100%;
+        align-items: center;
         justify-content: space-around;
       }
+  
       .contact-info, .social-media {
         width: 16%;
       }
@@ -593,21 +739,24 @@
       /* CONTACT US */
   
       .contact-us {
-        justify-content: space-between;
+        justify-content: space-around;
       }
         
       .general-info, .chat {
-        width: 48%;
+        width: 50%;
       }
   
       /************************ FAQ ******************************/
+      .faq-item .container {
+        width: 90%;
+      }
   
       .questions {
-        justify-content: space-between;
+        justify-content: space-around;
       }
       
       .faq-item {
-        width: 48%;
+        width: 50%;
       }
     }
   
