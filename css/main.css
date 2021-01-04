@@ -686,6 +686,13 @@
         width: 45%;             /*This sets the width of the paragraphs in the mission div*/
       }
   
+  
+      /*MAP INFORMATION*/
+  
+      .map figure {
+        padding-bottom: 45%;
+      }
+  
       /* CONTACT US */
   
       .contact-us {
@@ -846,6 +853,12 @@
   
       .mission-contents p {
         width: 48%;
+      }
+  
+      /*MAP INFORMATION*/
+  
+      .map figure {
+        padding-bottom: 38%;
       }
   
       /* CONTACT US */
