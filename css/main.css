@@ -319,6 +319,10 @@
       background-size: cover;
     }
   
+    .itinerary .container {
+      align-items: flex-start;
+    }
+  
     .itinerary-title {
       /*padding-left: 25px;*/  /*This class needs to be 100% so items start on the next line*/
       width: 100%;
@@ -339,6 +343,12 @@
     .items p {
       text-align: center;
       width: 100%;            /*The paragraphs will take up 100% of the item div width*/
+    }
+  
+    /*Icon size*/
+  
+    .font-awesome {
+      font-size: 3.75em;
     }
   
     /* TESTIMONIAL */
@@ -382,29 +392,52 @@
     /* FOOTER */
   
     footer {
+      width: 100%;
       padding-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   
     .copy{
       padding-top: 50px;
     }
   
-    .contact-info, .social-media, .copy {
+    .contact-info {
       width: 100%;
-      text-align: center;
-    }
-  
-    .social-media ul {
-      margin: 0;
-      padding: 0;
-      width: 100%;
+      padding-bottom: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
     }
   
-    .social-media ul li {
+    .contact-info h3, .contact-info address, .social-title, .social-contents, .copy {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .social-media {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+  
+    
+    .social-media a i {
+      font-size: 1.25em;
+      padding: 10px;
+      background-color: #527158;
+      border-radius: 50px;
+    }
+  
+    .social-contents .container{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
   
     /************************ ABOUT ******************************/
@@ -455,8 +488,6 @@
       left: 0;
     }
   
-    /*Next, make code responsive for tablets and desktop. check mobile percentage*/
-  
     /* CONTACT US */
   
     .contact-us {
@@ -481,6 +512,7 @@
   
     .general-info, .chat {
       width: 100%;
+      padding-bottom: 30px;
     }
     
   
@@ -506,6 +538,7 @@
     }
     .faq-item {
       width: 100%;
+      padding-bottom: 30px;
     }
   
     /*********************** TABLET STYLES *************************************/
@@ -667,9 +700,7 @@
         text-align: center;
       }
   
-      .contact-info, .social-media, .copy {
-        /*padding-top: 50px;*/
-      }
+  
   
       /************************ ABOUT ******************************/
   
@@ -841,7 +872,15 @@
       }
   
       .contact-info, .social-media {
-        width: 16%;
+        /*width: 16%;*/
+      }
+  
+      /* check*/
+  
+      footer {
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
       }
   
       /************************ ABOUT ******************************/
