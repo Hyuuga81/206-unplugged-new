@@ -421,6 +421,10 @@ input[type="button"] {
   border-radius: 50%;
 }
 
+.social-icons .fa-facebook-f {
+  padding: 12px 16px;
+}
+
 .copyright p {
   font-size: .875em;
 }
