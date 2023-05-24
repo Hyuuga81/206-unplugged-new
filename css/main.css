@@ -18,14 +18,14 @@ html {
 }
 
 /*
-   * Remove text-shadow in selection highlight:
-   * https://twitter.com/miketaylr/status/12228805301
-   *
-   * Vendor-prefixed and regular ::selection selectors cannot be combined:
-   * https://stackoverflow.com/a/16982510/7133471
-   *
-   * Customize the background color to match your design.
-   */
+     * Remove text-shadow in selection highlight:
+     * https://twitter.com/miketaylr/status/12228805301
+     *
+     * Vendor-prefixed and regular ::selection selectors cannot be combined:
+     * https://stackoverflow.com/a/16982510/7133471
+     *
+     * Customize the background color to match your design.
+     */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -38,8 +38,8 @@ html {
 }
 
 /*
-   * A better looking default horizontal rule
-   */
+     * A better looking default horizontal rule
+     */
 
 hr {
   display: block;
@@ -51,10 +51,10 @@ hr {
 }
 
 /*
-   * Remove the gap between audio, canvas, iframes,
-   * images, videos and the bottom of their containers:
-   * https://github.com/h5bp/html5-boilerplate/issues/440
-   */
+     * Remove the gap between audio, canvas, iframes,
+     * images, videos and the bottom of their containers:
+     * https://github.com/h5bp/html5-boilerplate/issues/440
+     */
 
 audio,
 canvas,
@@ -66,8 +66,8 @@ video {
 }
 
 /*
-   * Remove default fieldset styles.
-   */
+     * Remove default fieldset styles.
+     */
 
 fieldset {
   border: 0;
@@ -76,25 +76,21 @@ fieldset {
 }
 
 /*
-   * Allow only vertical resizing of textareas.
-   */
+     * Allow only vertical resizing of textareas.
+     */
 
 textarea {
   resize: vertical;
 }
 
 /* ==========================================================================
-     Author's custom styles
-     ========================================================================== */
+       Author's custom styles
+       ========================================================================== */
 
 /*--------------------- General Styles ------------------------- */
 
 html {
   font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
 }
 
 body {
@@ -107,7 +103,6 @@ body {
   align-items: center;
   flex-flow: row wrap;
 }
-
 
 a {
   text-transform: uppercase;
@@ -139,7 +134,6 @@ address {
   font-style: normal;
 }
 
-
 /* -------------------- Base Header - Footer styles ---------------------- */
 header,
 footer {
@@ -150,7 +144,6 @@ footer {
   flex-flow: row wrap;
   background-color: #202322;
 }
-
 
 header figure {
   width: 60%;
@@ -315,7 +308,6 @@ input[type="button"] {
 }
 
 
-
 /* ----------------------- features ----------------- */
 
 .features {
@@ -328,8 +320,18 @@ input[type="button"] {
   background-size: cover;
 }
 
+.features-head {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .features h1 {
-  margin: 0 0 10px 0;
+  font-size: 1.875em;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0 0 60px 0;
 }
 
 .features-items {
@@ -340,6 +342,8 @@ input[type="button"] {
 }
 
 .features-items .fa-solid {
+  width: 100%;
+  text-align: center;
   font-size: 3.75em;
   margin: 60px 0 40px 0;
   line-height: 0;
@@ -513,7 +517,6 @@ input[type="button"] {
   padding-top: 15px;
 }
 
-
 /* ----------------------------------- FAQ --------------------- */
 
 .faq {
@@ -602,10 +605,10 @@ input[type="button"] {
 }
 
 /* ==========================================================================
-     EXAMPLE Media Queries for Responsive Design.
-     These examples override the primary ('mobile first') styles.
-     Modify as content requires.
-     ========================================================================== */
+       EXAMPLE Media Queries for Responsive Design.
+       These examples override the primary ('mobile first') styles.
+       Modify as content requires.
+       ========================================================================== */
 
 @media only screen and (min-width: 768px) {
   /* Tablet styles here */
@@ -629,7 +632,6 @@ input[type="button"] {
     width: 100%;
     justify-content: flex-start;
   }
-
 
   .header-divider {
     display: none;
@@ -678,7 +680,6 @@ input[type="button"] {
   }
 
 
-
   /* ---------------------- form --------------------------- */
 
   aside {
@@ -711,9 +712,19 @@ input[type="button"] {
     padding: 100px 0 95px 0;
   }
 
+  .features-head {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .features h1 {
-    font-weight: normal;
-    line-height: 48px;
+    width: 80%;
+    font-size: 2.25em;
+    line-height: 1.333;
+    font-weight: 500;
+    margin-bottom: 20px;
   }
 
   .features .content-wrapper {
@@ -725,8 +736,8 @@ input[type="button"] {
   }
 
   .features-items .fa-solid {
-    font-size: 4.5em;
-    margin: 50px 0 30px 0;
+    font-size: 3.75em;
+    margin: 60 0 30px 0;
   }
 
   .features-items p {
@@ -771,7 +782,6 @@ input[type="button"] {
   }
 
 
-
   /* ---------------------------- footer ------------------------- */
 
   .footer-content {
@@ -805,7 +815,6 @@ input[type="button"] {
   .social-icons {
     justify-content: space-between;
   }
-
 
 
   /* ---------------------------- about ------------------------- */
@@ -874,23 +883,22 @@ input[type="button"] {
 
 }
 
-
 /* -------------------------- DESKTOP STYLES --------------------- */
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   /* Desktop styles here */
 
   .content-wrapper {
-    width: 80%;
+    max-width: 960px;
   }
 
   header {
-    width: 80%;
+    max-width: 960px;
   }
 
-  header .content-wrapper {
-    width: 25%;
-  }
+  /* header .content-wrapper {
+      max-width: 960px;
+    } */
 
   header a {
     width: 100%;
@@ -907,14 +915,15 @@ input[type="button"] {
   /* ------------------ hero-area -------------------*/
 
   .hero-content {
-    width: 80%;
+    max-width: 960px;
     justify-content: flex-start;
     padding: 50px 0 435px 0;
   }
 
   .hero-content h1 {
-    width: 58%;
+    width: 70%;
     font-size: 3.75em;
+    font-weight: 500;
     margin: 0;
 
   }
@@ -928,15 +937,24 @@ input[type="button"] {
 
   aside h2 {
     font-size: 1.875em;
+    line-height: 1.25;
+    font-weight: 500;
+    margin: 20px 0;
   }
 
   aside p {
-    font-size: 1.125em;
+    font-size: 1.333;
+  }
+
+  .form-description h2,
+  .form h2 {
+    margin: 20px 0;
+    padding: 0;
   }
 
   .form-description p {
+    padding: 0;
     margin: 0;
-    padding: 20px 0;
   }
 
   .form,
@@ -946,28 +964,72 @@ input[type="button"] {
   }
 
 
-
   /* ------------------ features --------------- */
 
   .features,
   .features .content-wrapper {
-    justify-content: space-around;
+    width: 100%;
+    justify-content: center;
     align-items: flex-start;
   }
 
-  .features h1 {
+  .features-head {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .features h1 {
+    font-size: 2.25em;
+    line-height: 1.333;
+    font-weight: 500;
+    max-width: 960px;
+    margin-bottom: 20px;
   }
 
   .features-items {
-    width: 21%;
-    margin: 34px;
+    width: 33%;
+    margin: 30px 0;
+  }
+
+  .features-items .fa-solid {
+    padding-bottom: 30px;
+  }
+
+  .features-items p {
+    width: 62%;
+    text-align: center;
+    font-size: 1.125em;
+    line-height: 1.333;
+    margin: 0;
   }
 
   /* ------------------ review --------------- */
 
   .review-block {
     justify-content: space-between;
+  }
+
+  .reviews h1 {
+    width: 85%;
+    font-size: 2.25em;
+    font-weight: 500;
+    margin-bottom: 40px;
+    line-height: 1;
+    padding-bottom: 50px;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    font-size: 1.875em;
+    line-height: 1.25;
+    font-weight: 500;
+  }
+
+  .reviews p {
+    width: 403px;
+    line-height: 1.333;
   }
 
   .reviews figure,
@@ -981,8 +1043,34 @@ input[type="button"] {
 
   /* --------------- Footer -----------------*/
 
+  .footer-content {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer-content h2 {
+    font-size: 1.865em;
+    font-weight: 500;
+    margin: 20px 0 40px 0;
+    padding: 0;
+  }
+
+  .contact,
+  .social {
+    width: 22%;
+  }
+
   .social .social-icons {
-    width: 33%;
+    width: 100%;
+  }
+
+  .social-icons .fa-brands {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  .social-icons .fa-facebook-f {
+    padding: 10px 15px;
   }
 
   /* ------------------ About --------------- */
@@ -1028,7 +1116,6 @@ input[type="button"] {
     padding: 0;
   }
 
-
   /* ------------------ FAQ --------------- */
 
   .faq h1 {
@@ -1042,12 +1129,12 @@ input[type="button"] {
 }
 
 /* ==========================================================================
-     Helper classes
-     ========================================================================== */
+       Helper classes
+       ========================================================================== */
 
 /*
-   * Hide visually and from screen readers
-   */
+     * Hide visually and from screen readers
+     */
 
 .hidden,
 [hidden] {
@@ -1055,13 +1142,13 @@ input[type="button"] {
 }
 
 /*
-   * Hide only visually, but have it available for screen readers:
-   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-   *
-   * 1. For long content, line feeds are not interpreted as spaces and small width
-   *    causes content to wrap 1 word per line:
-   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-   */
+     * Hide only visually, but have it available for screen readers:
+     * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+     *
+     * 1. For long content, line feeds are not interpreted as spaces and small width
+     *    causes content to wrap 1 word per line:
+     *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+     */
 
 .sr-only {
   border: 0;
@@ -1077,10 +1164,10 @@ input[type="button"] {
 }
 
 /*
-   * Extends the .sr-only class to allow the element
-   * to be focusable when navigated to via the keyboard:
-   * https://www.drupal.org/node/897638
-   */
+     * Extends the .sr-only class to allow the element
+     * to be focusable when navigated to via the keyboard:
+     * https://www.drupal.org/node/897638
+     */
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
@@ -1094,24 +1181,24 @@ input[type="button"] {
 }
 
 /*
-   * Hide visually and from screen readers, but maintain layout
-   */
+     * Hide visually and from screen readers, but maintain layout
+     */
 
 .invisible {
   visibility: hidden;
 }
 
 /*
-   * Clearfix: contain floats
-   *
-   * For modern browsers
-   * 1. The space content is one way to avoid an Opera bug when the
-   *    `contenteditable` attribute is included anywhere else in the document.
-   *    Otherwise it causes space to appear at the top and bottom of elements
-   *    that receive the `clearfix` class.
-   * 2. The use of `table` rather than `block` is only necessary if using
-   *    `:before` to contain the top-margins of child elements.
-   */
+     * Clearfix: contain floats
+     *
+     * For modern browsers
+     * 1. The space content is one way to avoid an Opera bug when the
+     *    `contenteditable` attribute is included anywhere else in the document.
+     *    Otherwise it causes space to appear at the top and bottom of elements
+     *    that receive the `clearfix` class.
+     * 2. The use of `table` rather than `block` is only necessary if using
+     *    `:before` to contain the top-margins of child elements.
+     */
 
 .clearfix::before,
 .clearfix::after {
@@ -1123,12 +1210,11 @@ input[type="button"] {
   clear: both;
 }
 
-
 /* ==========================================================================
-     Print styles.
-     Inlined to avoid the additional HTTP request:
-     https://www.phpied.com/delay-loading-your-print-css/
-     ========================================================================== */
+       Print styles.
+       Inlined to avoid the additional HTTP request:
+       https://www.phpied.com/delay-loading-your-print-css/
+       ========================================================================== */
 
 @media print {
 
@@ -1156,9 +1242,9 @@ input[type="button"] {
   }
 
   /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -1175,9 +1261,9 @@ input[type="button"] {
   }
 
   /*
-     * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+       * Printing Tables:
+       * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+       */
   thead {
     display: table-header-group;
   }
