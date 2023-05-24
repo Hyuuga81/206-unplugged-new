@@ -406,6 +406,8 @@ input[type="button"] {
 
 .contact address {
   text-align: center;
+  color: #fff;
+  text-decoration: none;
 }
 
 .social {
@@ -509,6 +511,8 @@ input[type="button"] {
   width: 100%;
   margin: 0;
   padding-top: 20px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .chat address {
